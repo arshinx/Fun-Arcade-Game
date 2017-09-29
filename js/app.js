@@ -1,3 +1,8 @@
+
+// ------------- //
+// --- Enemy --- //
+// ------------- //
+
 // Enemies our player must avoid
 var Enemy = function() {
   // Variables applied to each of our instances go here,
@@ -20,6 +25,10 @@ Enemy.prototype.update = function(dt) {
 Enemy.prototype.render = function() {
   ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
+
+// -------------- //
+// --- Player --- //
+// -------------- //
 
 // Now write your own player class
 // This class requires an update(), render() and
