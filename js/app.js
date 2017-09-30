@@ -43,6 +43,13 @@ Enemy.prototype.update = function(dt) {
 
   // Reposition enemy if it moves outside the screen
   if (this.x > 550) {
+
+    allEnemies.pop();
+    allEnemies.push(new Enemy (-200, 60));
+
+    allEnemies.pop();
+    allEnemies.push(new Enemy (-300, 60));
+
     // Start again
     this.x = -30;
   }
