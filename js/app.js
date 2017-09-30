@@ -32,7 +32,13 @@ var Enemy = function(x, y) {
 
   // The image/sprite for our enemies, this uses
   // a helper we've provided to easily load images
-  this.sprite = shuffle('images/enemy-bug.png','images/enemy-bug-1.png','images/enemy-bug-2.png','images/enemy-bug-3.png','images/enemy-bug-2.png');
+  this.sprite = shuffle(
+    'images/enemy-bug.png',
+    'images/enemy-bug-1.png',
+    'images/enemy-bug-2.png',
+    'images/enemy-bug-3.png',
+    'images/enemy-bug-2.png'
+  );
 };
 
 // Update the enemy's position, required method for game
