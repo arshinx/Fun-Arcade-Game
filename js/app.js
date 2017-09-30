@@ -148,6 +148,10 @@ function checkCollisions() {
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
+var enemy1 = new Enemy (-300, 60);
+var enemy2 = new Enemy (-200, 225);
+var enemy3 = new Enemy (-400, 60);
+var enemy4 = new Enemy (-100, 225);
 
 
 
