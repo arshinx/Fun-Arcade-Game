@@ -3,6 +3,7 @@
 // ------------ //
 var score = 0;
 
+// Shuffles between choices based on score
 function shuffle(a, b, c, d, e) {
   if (score % 2 == 0) {
     return a;
