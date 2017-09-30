@@ -152,6 +152,7 @@ var enemy1 = new Enemy (-300, 60);
 var enemy2 = new Enemy (-200, 225);
 var enemy3 = new Enemy (-400, 60);
 var enemy4 = new Enemy (-100, 225);
+var allEnemies = [enemy1, enemy2, enemy3, enemy4];
 
 
 
