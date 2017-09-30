@@ -68,7 +68,9 @@ Player.prototype.render = function() {
 // -- Player Mechanics -- //
 
 // Validate input to ensure board constraints using directions
-
+Player.prototype.handleInput = function(dir) {
+  
+}
 
 // ----------------- //
 // --- Game Play --- //
