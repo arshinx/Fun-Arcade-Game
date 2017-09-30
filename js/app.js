@@ -131,7 +131,9 @@ Player.prototype.handleInput = function(dir) {
 
 // Check Collision
 function checkCollisions() {
-  
+
+  // Iterate through each enemy
+
 }
 
 // Now instantiate your objects.
