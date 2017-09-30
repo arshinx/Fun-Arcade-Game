@@ -61,10 +61,9 @@ Player.prototype.update = function() {
     score += 1;
     // Display score
     $("h1").replaceWith("<h1>" + "Score: " + score + "</h1>");
-    // Set Player Image
+    // Set Player Image - rotate
     if (score % 2 == 0) {
       this.sprite = 'images/char-boy.png';
-    } else {
       this.sprite = 'images/char-girl.png';
     }
     // Reset player position
