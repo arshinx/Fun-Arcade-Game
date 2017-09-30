@@ -59,6 +59,8 @@ Player.prototype.update = function() {
   if (this.y < 60) {
     // Increment Score Count
     score += 1;
+    // Display score
+    $("h1").replaceWith(score);
     // Reset player position
 		this.y = 400;
 	}
