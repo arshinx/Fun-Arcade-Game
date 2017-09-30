@@ -2,6 +2,7 @@
 // --- Game --- //
 // ------------ //
 var score = 0;
+var newEnemy = Enemy(-100, 60);
 
 // Shuffles between choices based on score
 function shuffle(a, b, c, d, e) {
@@ -43,7 +44,7 @@ Enemy.prototype.update = function(dt) {
 
   // Add and Replace Enemies
   if (allEnemies[allEnemies.length - 1].x > 550) {
-    
+
     allEnemies.pop()
     allEnemies.push(new Enemy (-200, 60));
   }
