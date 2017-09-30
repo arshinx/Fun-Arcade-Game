@@ -139,7 +139,7 @@ function checkCollisions() {
     if ((enemy.x < player.x + 30) && (enemy.x + 60 > player.x) && (enemy.y < player.y + 60) && (enemy.y + 40 > player.y)) {
 
       // Reset Player
-      this.y = 400;
+      player.y = 400;
     }
 
   });
