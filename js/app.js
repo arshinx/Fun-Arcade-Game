@@ -88,7 +88,7 @@ Player.prototype.update = function() {
       this.sprite = 'images/char-princess-girl.png';
     }
     // Reset player position
-		this.y = 400;
+    this.y = 400;
 	}
 }
 
