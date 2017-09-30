@@ -79,6 +79,11 @@ Player.prototype.handleInput = function(dir) {
     // Move up
     this.y += 100;
   }
+  // Left + Right Vertical Bound
+  else if (dir == "left" && this.x > 0) {
+    // Move Left
+    this.x -= 100;
+  }
 }
 
 // ----------------- //
