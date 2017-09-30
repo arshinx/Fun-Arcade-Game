@@ -46,7 +46,14 @@ Enemy.prototype.update = function(dt) {
   if (allEnemies[allEnemies.length - 1].x > 550) {
 
     allEnemies.pop()
-    allEnemies.push(new Enemy (-200, 60));
+    newEnemy = shuffle(
+      new Enemy (-300, 60),
+      new Enemy (-200, 225),
+      new Enemy (-100, 60),
+      new Enemy (-100, 225),
+      new Enemy (-300, 60)
+   );
+    allEnemies.push(newEnemy);
   }
 
   // Reposition enemy if it moves outside the screen
