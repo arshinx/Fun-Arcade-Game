@@ -39,6 +39,12 @@ Enemy.prototype.update = function(dt) {
   // You should multiply any movement by the dt parameter
   // which will ensure the game runs at the same speed for
   // all computers.
+
+  // Reposition enemy if it moves outside the screen
+  if (this.x > 550) {
+    // Start again
+    this.x = -30;
+  }
   this.x += 120 * dt;
 };
 
