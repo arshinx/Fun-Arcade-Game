@@ -46,6 +46,12 @@ var Player = function(x, y) {
   // a helper we've provided to easily load images
   this.sprite = 'images/char-horn-girl.png';
 };
+
+// Draw the Player on the screen, required method for game
+Player.prototype.render = function() {
+  ctx.drawImage(
+    Resources.get(this.sprite), this.x, this.y
+  );
 };
 
 // ----------------- //
