@@ -5,15 +5,15 @@ var score = 0;
 
 function shuffle(a, b, c, d, e) {
   if (score % 2 == 0) {
-    this.sprite = a;
+    return a;
   } else if (score % 3 == 0) {
-    this.sprite = b;
+    return b;
   } else if (score % 4 == 0) {
-    this.sprite = c;
+    return c;
   } else if (score % 5 == 0) {
-    this.sprite = d;
+    return d;
   } else {
-    this.sprite = e;
+    return e;
   }
 }
 
