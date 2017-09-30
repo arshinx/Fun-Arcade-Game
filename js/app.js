@@ -45,7 +45,12 @@ Enemy.prototype.update = function(dt) {
   if (this.x > 550) {
 
     allEnemies.pop();
+  // Add and Replace Enemies
+  if (allEnemies[allEnemies.length - 1].x > 550) {
+    
+    allEnemies.pop()
     allEnemies.push(new Enemy (-200, 60));
+  }
 
     allEnemies.pop();
     allEnemies.push(new Enemy (-300, 60));
