@@ -47,6 +47,11 @@ var Player = function(x, y) {
   this.sprite = 'images/char-horn-girl.png';
 };
 
+// Player Updates
+Player.prototype.update = function() {
+
+}
+
 // Draw the Player on the screen, required method for game
 Player.prototype.render = function() {
   ctx.drawImage(
