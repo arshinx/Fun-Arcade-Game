@@ -42,6 +42,10 @@ var Player = function(x, y) {
   this.x = x; // horizontal movement
   this.y = y; // vertical movement
 
+  // The image/sprite for our enemies, this uses
+  // a helper we've provided to easily load images
+  this.sprite = 'images/char-horn-girl.png';
+};
 };
 
 // ----------------- //
