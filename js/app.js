@@ -69,12 +69,12 @@ Player.prototype.render = function() {
 
 // Validate input to ensure board constraints using directions
 Player.prototype.handleInput = function(dir) {
-  // Up + Upper Bound
+  // Up + Lower Bound
   if (dir == "up" && this.y > 50) {
     // Move down
     this.y -= 100;
   }
-  // Down + Lower Bound
+  // Down + Upper Bound
   else if (dir == "down" && this.y < 400) {
     // Move up
     this.y += 100;
