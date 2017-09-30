@@ -29,6 +29,7 @@ var Enemy = function(x, y) {
   // we've provided one for you to get started
   this.x = x; // horizontal movement
   this.y = y; // vertical movement
+  this.speed = 100;
 
   // The image/sprite for our enemies, this uses
   // a helper we've provided to easily load images
