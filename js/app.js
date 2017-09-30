@@ -74,6 +74,11 @@ Player.prototype.handleInput = function(dir) {
     // Move down
     this.y -= 100;
   }
+  // Down + Lower Bound
+  else if (dir == "down" && this.y < 400) {
+    // Move up
+    this.y += 100;
+  }
 }
 
 // ----------------- //
