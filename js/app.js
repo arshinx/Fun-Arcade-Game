@@ -51,7 +51,10 @@ Enemy.prototype.update = function(dt) {
   // Add and Replace Enemies
   if (allEnemies[allEnemies.length - 1].x > 550) {
 
+    // Remove enemy
     allEnemies.pop()
+
+    // Shuffle and create a new enemy
     newEnemy = shuffle(
       new Enemy (-150, 50),
       new Enemy (-200, 225),
