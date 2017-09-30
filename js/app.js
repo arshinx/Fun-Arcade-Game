@@ -107,7 +107,7 @@ Player.prototype.update = function() {
     // Increment Score Count
     score += 1;
     // Display score
-    $("h1").replaceWith("<h1>" + "Score: " + score + "</h1>");
+    $("#score").text(score );
     // Set Player Image - rotate
     if (score % 2 == 0) {
       this.sprite = 'images/char-boy.png';
