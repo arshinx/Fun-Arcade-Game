@@ -64,7 +64,14 @@ Player.prototype.update = function() {
     // Set Player Image - rotate
     if (score % 2 == 0) {
       this.sprite = 'images/char-boy.png';
+    } else if (score % 3 == 0) {
+      this.sprite = 'images/char-cat-girl.png';
+    } else if (score % 4 == 0) {
+      this.sprite = 'images/char-horn-girl.png';
+    } else if (score % 5 == 0) {
       this.sprite = 'images/char-girl.png';
+    } else {
+      this.sprite = 'images/char-princess-girl.png';
     }
     // Reset player position
 		this.y = 400;
