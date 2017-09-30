@@ -56,9 +56,9 @@ Enemy.prototype.update = function(dt) {
 
     // Shuffle and create a new enemy
     newEnemy = shuffle(
-      new Enemy (-150, 50),
+      new Enemy (-150, 120),
       new Enemy (-200, 225),
-      new Enemy (-100, 50),
+      new Enemy (-100, 87.5),
       new Enemy (-100, 225),
       new Enemy (-150, 50)
     );
