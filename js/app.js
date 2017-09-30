@@ -53,12 +53,13 @@ Enemy.prototype.update = function(dt) {
 
     allEnemies.pop()
     newEnemy = shuffle(
-      new Enemy (-300, 60),
+      new Enemy (-150, 50),
       new Enemy (-200, 225),
-      new Enemy (-100, 60),
+      new Enemy (-100, 50),
       new Enemy (-100, 225),
-      new Enemy (-300, 60)
+      new Enemy (-150, 50)
    );
+   console.log(newEnemy.x + ", " + newEnemy.y + " - " + newEnemy.sprite)
     allEnemies.push(newEnemy);
   }
 
