@@ -50,27 +50,19 @@ Enemy.prototype.update = function(dt) {
   // all computers.
 
   // Add and Replace Enemies
-  if (allEnemies[allEnemies.length - 1].x > 550) {
-
-    // Remove enemy
-    allEnemies.pop()
-
-    // Shuffle and create a new enemy
-    newEnemy = shuffle(
-      new Enemy (-150, 120),
-      new Enemy (-200, 225),
-      new Enemy (-100, 87.5),
-      new Enemy (-100, 225),
-      new Enemy (-150, 50)
-    );
-    allEnemies.push(newEnemy);
-  }
-
   // Reposition enemy if it moves outside the screen
   if (this.x > 550) {
-
     // Start again
     this.x = -30;
+     // reset sprite and row
+    this.sprite = shuffle(
+      'images/enemy-bug.png',
+      'images/enemy-bug-1.png',
+      'images/enemy-bug-2.png',
+      'images/enemy-bug-3.png',
+      'images/enemy-bug-2.png'
+    );
+     this.y = possibleYValues[Math.floor(Math.random()*possibleYValues.length)];
   }
   this.x += this.speed * dt;
 };
