@@ -3,6 +3,7 @@
 // ------------ //
 var score = 0;
 var newEnemy;
+var possibleYValues = [50, 87.5, 120, 225];
 
 // Shuffles between choices based on score
 function shuffle(a, b, c, d, e) {
