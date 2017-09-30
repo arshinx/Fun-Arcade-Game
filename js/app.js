@@ -72,7 +72,7 @@ Enemy.prototype.update = function(dt) {
     // Start again
     this.x = -30;
   }
-  this.x += 120 * dt;
+  this.x += this.speed * dt;
 };
 
 // Draw the enemy on the screen, required method for game
