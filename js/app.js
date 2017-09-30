@@ -52,7 +52,7 @@ Player.prototype.update = function() {
   // If player moves in water, player wins: restart game
   if (this.y < 60) {
     // Reset player position
-		player.reset();
+		this.y = 400;
 	}
 }
 
