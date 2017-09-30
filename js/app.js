@@ -41,10 +41,6 @@ Enemy.prototype.update = function(dt) {
   // which will ensure the game runs at the same speed for
   // all computers.
 
-  // Reposition enemy if it moves outside the screen
-  if (this.x > 550) {
-
-    allEnemies.pop();
   // Add and Replace Enemies
   if (allEnemies[allEnemies.length - 1].x > 550) {
     
@@ -52,8 +48,8 @@ Enemy.prototype.update = function(dt) {
     allEnemies.push(new Enemy (-200, 60));
   }
 
-    allEnemies.pop();
-    allEnemies.push(new Enemy (-300, 60));
+  // Reposition enemy if it moves outside the screen
+  if (this.x > 550) {
 
     // Start again
     this.x = -30;
