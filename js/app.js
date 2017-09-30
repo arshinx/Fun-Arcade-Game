@@ -60,7 +60,7 @@ Player.prototype.update = function() {
     // Increment Score Count
     score += 1;
     // Display score
-    $("h1").replaceWith(score);
+    $("h1").replaceWith("<h1>" + "Score: " + score + "</h1>");
     // Reset player position
 		this.y = 400;
 	}
