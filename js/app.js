@@ -2,6 +2,7 @@
 // --- Game --- //
 // ------------ //
 var score = 0;
+var newEnemy;
 
 // Shuffles between choices based on score
 function shuffle(a, b, c, d, e) {
