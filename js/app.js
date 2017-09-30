@@ -129,6 +129,11 @@ Player.prototype.handleInput = function(dir) {
 // --- Game Play --- //
 // ----------------- //
 
+// Check Collision
+function checkCollisions() {
+  
+}
+
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
