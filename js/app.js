@@ -57,6 +57,8 @@ var Player = function(x, y) {
 Player.prototype.update = function() {
   // If player moves in water, player wins: restart game
   if (this.y < 60) {
+    // Increment Score Count
+    score += 1;
     // Reset player position
 		this.y = 400;
 	}
