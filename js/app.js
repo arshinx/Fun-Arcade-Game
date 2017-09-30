@@ -65,6 +65,11 @@ Player.prototype.render = function() {
   );
 };
 
+// -- Player Mechanics -- //
+
+// Validate input to ensure board constraints using directions
+
+
 // ----------------- //
 // --- Game Play --- //
 // ----------------- //
